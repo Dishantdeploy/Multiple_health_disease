@@ -9,12 +9,12 @@ st.set_page_config(page_title="Health Assistant",
                    page_icon="🧑‍⚕️")
 
 # Specify the directory containing saved models
-model_dir = r'C:\Users\Lenovo\Desktop\New folder'
+#model_dir = r'C:\Users\Lenovo\Desktop\New folder'
 
 # Load the saved models
-diabetes_model = pickle.load(open(f'{model_dir}/diabetes_model.sav', 'rb'))
-heart_disease_model = pickle.load(open(f'{model_dir}/heart_disease_model.sav', 'rb'))
-parkinsons_model = pickle.load(open(f'{model_dir}/parkinsons_model.sav', 'rb'))
+diabetes_model = pickle.load(open(f'diabetes_model.sav', 'rb'))
+heart_disease_model = pickle.load(open(f'heart_disease_model.sav', 'rb'))
+parkinsons_model = pickle.load(open(f'parkinsons_model.sav', 'rb'))
 
 # Sidebar for navigation
 with st.sidebar:
